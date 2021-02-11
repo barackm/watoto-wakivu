@@ -1,13 +1,21 @@
+@font-face {
+  font-family: "helvetica";
+  src: url("./assets/fonts/Helvetica-Font/helvetica-compressed-5871d14b6903a.otf");
+  src: url("./assets/fonts/Helvetica-Font/Helvetica-Bold.ttf")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("./assets/fonts/Helvetica-Font/helvetica-rounded-bold-5871d05ead8de.otf")
+      format("woff2"); /* Super Modern Browsers */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

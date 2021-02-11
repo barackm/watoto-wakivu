@@ -1,0 +1,142 @@
+@import "./mixins/media";
+@import "./variables";
+.home-main-area {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 999;
+  .home-container-overlay {
+    position: absolute;
+    width: 65%;
+    height: 95%;
+    top: 0;
+    right: 0;
+    border-radius: 0% 0% 0% 100%;
+    z-index: 9;
+    overflow: hidden;
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .overlay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: $primary;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    @include queries(1150px) {
+      width: 62%;
+      height: 75%;
+    }
+
+    @include queries($mobile) {
+      width: 60%;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
+  .home-main-content-area {
+    width: 100%;
+    height: 100%;
+    background-color: $white-secondary;
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+  .hero-text-container {
+    width: 400px;
+    font-size: 40px;
+    line-height: 1.2;
+    z-index: 9999;
+    position: absolute;
+    left: 50px;
+    @include queries($mobile) {
+      left: 30px;
+      font-size: 30px;
+      width: 300px;
+      margin-bottom: 60px;
+      line-height: 1.3;
+    }
+    @include queries(400px) {
+      left: 30px;
+      font-size: 30px;
+      width: 80%;
+      margin-bottom: 60px;
+      line-height: 1.3;
+    }
+  }
+}
+.hero-btn-container {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  position: absolute;
+  bottom: 200px;
+  left: 50px;
+  z-index: 9999;
+  @include queries(400px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    bottom: 150px;
+  }
+  .first-btn {
+    color: $white;
+    background-color: $primary;
+    padding: 12px 25px;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba($primary, $alpha: 0.4);
+    @include queries(400px) {
+      margin-bottom: 20px;
+    }
+  }
+  .second-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
+    background-color: $white;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 30px;
+    margin-right: 20px;
+    border: 2px solid $primary;
+    cursor: pointer;
+  }
+}
+.overlay-sha {
+  position: absolute;
+  top: 150px;
+  left: -10px;
+  width: 300px;
+  height: 300px;
+  background-color: $primary;
+  opacity: 0.1;
+  border-radius: 33% 67% 65% 35% / 26% 35% 65% 74%;
+  z-index: 9;
+  @include queries(1000px) {
+  }
+  @include queries($mobile) {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 10px;
+  }
+}

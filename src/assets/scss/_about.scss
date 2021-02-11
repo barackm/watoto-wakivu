@@ -1,0 +1,113 @@
+.about-main-area {
+  width: 100%;
+  display: flex;
+  min-height: 700px;
+  z-index: 999;
+  background-color: lighten($white-secondary, 80%);
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      line-height: 1;
+      font-size: 45px;
+    }
+    p {
+      width: 70%;
+      font-size: 18px;
+    }
+  }
+}
+.grid-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+  .grid-container {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .grid-item--main-content {
+      border-right: 2px solid $primary;
+      position: relative;
+      padding-bottom: 50px;
+      padding-right: 30px;
+      &.second {
+        border: none;
+        border-left: 2px solid $primary;
+        padding-left: 40px;
+        margin-left: -2px;
+        .dot {
+          left: -10px;
+          top: 0;
+        }
+      }
+      h3 {
+        margin-top: 0;
+        font-weight: bolder;
+      }
+      p {
+        font-weight: 300 !important;
+      }
+      .dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        right: -10px;
+        top: 0;
+        background-color: $primary;
+        box-shadow: 0 0 10px rgba($primary, $alpha: 0.7);
+      }
+    }
+  }
+  overflow: hidden !important;
+}
+
+.overlay-about {
+  width: 100%;
+  position: absolute;
+  background-image: url("../images/map.png");
+  height: 100%;
+  z-index: 99;
+  bottom: 0;
+}
+.items {
+  margin-top: 20px;
+  margin-left: 50px;
+  .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    p {
+      margin-top: 0;
+      i {
+        span {
+          font-size: 16px;
+          color: $primary;
+        }
+      }
+      strong {
+        font-weight: 800;
+        font-size: 20px;
+        opacity: 1;
+        color: #000;
+      }
+    }
+    .about-dot {
+      color: $primary;
+      margin-right: 15px;
+      font-size: 25px;
+    }
+  }
+}

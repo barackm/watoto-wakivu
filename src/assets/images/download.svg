@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="1009px" width="472px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 472 1009"><!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+ <title>Triangle</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <linearGradient id="linearGradient-1" y1="-7.43%" x2="76.727%" x1="11.749%" y2="126.35%">
+   <stop stop-color="#3023AE" offset="0"/>
+   <stop stop-color="#53A0FD" offset=".22962"/>
+   <stop stop-color="#B4EC51" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g id="HomePage" opacity="0.9" fill-rule="evenodd" fill="none">
+  <g id="Desktop-HD" fill="url(#linearGradient-1)" transform="translate(0 -601)">
+   <g id="Plugin-Copy" transform="translate(-743 561)">
+    <path id="Triangle" d="m609.2 0c289.75 0 716.3 679.9 579.5 890s-1011.1 227.1-1159 0c-147.89-227.13 289.75-890 579.5-890z"/>
+   </g>
+  </g>
+ </g>
+</svg>

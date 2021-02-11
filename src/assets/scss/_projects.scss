@@ -1,0 +1,209 @@
+.projects-main-container {
+  width: 100%;
+  min-height: 700px;
+  background-color: $white;
+  padding-top: 50px;
+  position: relative;
+  z-index: 999;
+  .projects-header-container {
+    z-index: 999;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .image-container-main {
+      z-index: 999;
+
+      width: 100%;
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image-wrapper {
+        z-index: 999;
+
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 60px;
+        overflow: hidden;
+        box-shadow: 0 0 60px rgba($color: darken($white, 60%), $alpha: 0.6);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .text-content {
+      z-index: 999;
+
+      display: flex;
+      flex-direction: column;
+      padding: 0 50px;
+      padding-top: 70px;
+      h1 {
+        font-size: 50px;
+        color: $dark;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 40px;
+        margin: 5px 0;
+        color: $primary;
+        &:nth-child(3) {
+          color: $secondary;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.4;
+        color: lighten($dark, 20%);
+      }
+    }
+  }
+}
+.divider-main-area {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  .divider-left {
+    flex: 1;
+    border-top-right-radius: 70px;
+    background-color: $primary;
+  }
+  .divider-right {
+    flex: 1;
+    border-top-left-radius: 70px;
+    background-color: $primary;
+  }
+}
+.btns-wrapper {
+  display: flex;
+  margin-top: 40px;
+  .btn-left {
+    background-color: $primary;
+    padding: 15px 60px;
+    color: $white;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      background-color: lighten($primary, 10%);
+    }
+  }
+}
+.projects-wrapper {
+  width: 100%;
+  display: flex;
+  padding-top: 300px;
+  padding-bottom: 100px;
+  .images-wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image-wrapper {
+      margin-left: -100px;
+      width: 80%;
+      box-shadow: 6px 1px 18px 6px
+        rgba($color: darken($white, 20%), $alpha: 0.5);
+      transform: rotate(-180deg);
+      img {
+        width: auto;
+        height: 100%;
+        transform: rotate(180deg);
+        opacity: 0.6;
+      }
+    }
+  }
+  .projects {
+    flex: 1;
+    padding-right: 50px;
+  }
+  .project-item {
+    z-index: 999;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 50px;
+    background-color: transparent;
+    .project-details {
+      z-index: 999;
+      background-color: $white;
+      display: flex;
+      .project--number {
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        background-color: #f1b814;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        margin-right: 50px;
+        box-shadow: 0 0 20px rgba($color: darken(#f1b814, 20%), $alpha: 0.5);
+        span {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        &.two {
+          background-color: $primary;
+          box-shadow: 0 0 20px rgba($color: darken($primary, 20%), $alpha: 0.5);
+        }
+        &.third {
+          background-color: $secondary;
+          box-shadow: 0 0 20px
+            rgba($color: darken($secondary, 20%), $alpha: 0.5);
+        }
+      }
+      .project-text {
+        flex: 1;
+        // background-color: #f1b814;
+        padding: 15px 20px;
+        border-radius: 15px;
+        box-shadow: 0 -10px 34px 0 rgba($color: darken($white, 40%), $alpha: 0.3);
+        .text-item {
+          display: flex;
+          margin-bottom: 15px;
+          .icon-wrapper {
+            margin-right: 15px;
+            .project-check-icon {
+              color: $primary;
+              font-size: 18px;
+            }
+          }
+          .content {
+            color: lighten($dark, 40%);
+            line-height: 1.4;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.overlay-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 30%;
+  right: 0;
+  border-radius: 50%;
+  background-color: rgba($color: $primary, $alpha: 0.1);
+  z-index: 1;
+  &.c--1 {
+    background-color: rgba($color: #f1b814, $alpha: 0.1);
+    left: 20%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  &.c--2 {
+    background-color: rgba($color: $secondary, $alpha: 0.1);
+    top: 70%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+  }
+}

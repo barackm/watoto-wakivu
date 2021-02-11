@@ -1,0 +1,245 @@
+.team-main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 700px;
+  padding-top: 100px;
+  background-color: $white-secondary;
+  position: relative;
+  justify-content: center;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      line-height: 1;
+      font-size: 45px;
+    }
+    p {
+      width: 70%;
+      font-size: 18px;
+    }
+  }
+}
+
+.team-members-grid-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  .team-members-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    .team-member-item {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          //   box-shadow: 0 0 20px rgba($color: lighten($dark, 30%), $alpha: 0.7);
+          img {
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+            transition: $transition;
+          }
+        }
+        .overlay {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba($color: $dark, $alpha: 0.6);
+          z-index: 9;
+          opacity: 0;
+          transition: $transition;
+          transition-duration: 1s;
+        }
+        .line {
+          width: 50%;
+          height: 50%;
+          position: absolute;
+          left: -15px;
+          bottom: -15px;
+          background-color: $primary;
+          z-index: -1;
+        }
+        .member-details {
+          width: 90%;
+          height: 90%;
+          position: absolute;
+          z-index: 99;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          //   border: 3px solid $primary;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border: 3px solid $primary;
+            transition: $transition;
+            opacity: 0;
+          }
+          &:hover::before {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+          }
+          .details-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            transition: $transition;
+            opacity: 0;
+            h3 {
+              font-size: 25px;
+              margin-bottom: 5px;
+              text-align: center;
+              transition: $transition;
+              transform: translateY(-50px);
+            }
+            span {
+              font-size: 18px;
+              text-align: center;
+              transition: $transition;
+              transform: translateY(-30px);
+            }
+            .icon-container {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-top: 20px;
+              z-index: 999;
+              a {
+                transition: $transition;
+                margin: 0 5px;
+                cursor: pointer;
+                transform: translateY(50px);
+                .team-member-icon {
+                  font-size: 25px;
+                  color: $primary;
+                }
+                &:nth-child(2) {
+                  transition-delay: 0.5s;
+                }
+                &:nth-child(3) {
+                  transition-delay: 0.5s;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .image-wrapper {
+          img {
+            transform: scale(1.1);
+          }
+          .overlay {
+            opacity: 1;
+            z-index: 99;
+          }
+          .line {
+          }
+          .member-details {
+            &::before {
+              width: 100%;
+              height: 100%;
+              opacity: 1;
+            }
+          }
+          .details-wrapper {
+            opacity: 1;
+            h3 {
+              font-size: 25px;
+              margin-bottom: 5px;
+              text-align: center;
+              transition: $transition;
+              transform: translateY(0);
+            }
+            span {
+              font-size: 18px;
+              text-align: center;
+              transition: $transition;
+              transform: translateY(0);
+            }
+            .icon-container {
+              a {
+                transition: $transition;
+                margin: 0 5px;
+                cursor: pointer;
+                transform: translateY(0);
+                .team-member-icon {
+                  font-size: 25px;
+                  color: $primary;
+                }
+                &:nth-child(2) {
+                  transition-delay: 0.1s;
+                }
+                &:nth-child(3) {
+                  transition-delay: 0.2s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.team-overlay--1 {
+  width: 300px;
+  height: 400px;
+  border-radius: 100% 0% 48% 52% / 72% 100% 0% 28%;
+  background-color: $primary;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  right: 0;
+}
+
+.team-overlay--2 {
+  width: 300px;
+  height: 400px;
+  border-radius: 36% 64% 58% 42% / 0% 34% 66% 100%;
+  background-color: $primary;
+  opacity: 0.2;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 0;
+}

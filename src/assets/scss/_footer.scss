@@ -1,0 +1,15 @@
+.footer-main-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid lighten(#cfcfcf, 10%);
+  p {
+    color: lighten($dark, 20%);
+    a {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
