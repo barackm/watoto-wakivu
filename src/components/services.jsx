@@ -5,12 +5,12 @@ import { FaHeartbeat } from "react-icons/fa";
 import { GiHamburger } from "react-icons/gi";
 import Dots from "./dots";
 import img from "../assets/images/bg1.jpg";
-import Cover from "./svg/cover";
+
 class Services extends Component {
   state = {};
   render() {
     return (
-      <div className="services-main-wrappe">
+      <div className="services-main-wrappe" id="services">
         <div className="overlay-shape"></div>
 
         <div className="header">

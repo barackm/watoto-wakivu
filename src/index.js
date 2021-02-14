@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import "./assets/css/main.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BrowserRouter } from "react-router-dom";
 AOS.init({
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
@@ -27,7 +28,9 @@ AOS.init({
 });
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

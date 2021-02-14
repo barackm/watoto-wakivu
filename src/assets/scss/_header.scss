@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 .header-main-area {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -19,7 +19,15 @@ body {
   height: 70px;
   overflow: hidden;
   transition: $transition;
-
+  &.scrolling {
+    background-color: lighten($primary, 0%);
+    box-shadow: 0 0 30px rgba($primary, $alpha: 0.7);
+    .logo {
+      span {
+        color: #fff !important;
+      }
+    }
+  }
   .logo {
     margin-left: 50px;
     span {
@@ -118,7 +126,7 @@ body {
       border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
       right: 0;
       margin-right: 0;
-      background-color: rgba($color: $dark, $alpha: 0.9);
+      background-color: rgba(0, 0, 0, 0.822);
       transition-delay: 0.6s;
       ul {
         flex-direction: column;

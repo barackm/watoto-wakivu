@@ -6,7 +6,7 @@ class About extends Component {
   state = {};
   render() {
     return (
-      <div className="about-main-area">
+      <div className="about-main-area" id="about">
         <div className="header">
           <h1 data-aos="zoom-in-up">Notre Histoire</h1>
           <p data-aos="zoom-in-up">

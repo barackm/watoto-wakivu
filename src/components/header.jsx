@@ -1,4 +1,6 @@
 import React, { Component, createRef } from "react";
+import { Link } from "react-scroll";
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -8,11 +10,14 @@ class Header extends Component {
   componentDidMount() {
     window.onscroll = () => {
       const scrollHeight = window.scrollY;
+      const scrollTop = document.querySelector(".go-top-main-btn");
 
       if (scrollHeight > 200) {
+        scrollTop.classList.add("visible");
         this.navbar.current.classList.add("scrolling");
       } else {
         this.navbar.current.classList.remove("scrolling");
+        scrollTop.classList.remove("visible");
       }
     };
   }
@@ -33,19 +38,29 @@ class Header extends Component {
         <div className="links">
           <ul>
             <li>
-              <a href="#1">Accueil</a>
+              <Link to="home" spy={true} smooth={true} duration={700} href="#1">
+                Accueil
+              </Link>
             </li>
             <li>
-              <a href="#1">Apropos</a>
+              <Link to="about" spy={true} smooth={true} duration={700} href="#1">
+                Apropos
+              </Link>
             </li>
             <li>
-              <a href="#1">Services</a>
+              <Link to="services" spy={true} smooth={true} duration={700} href="#1">
+                Services
+              </Link>
             </li>
             <li>
-              <a href="#1">Contacts</a>
+              <Link to="contacts" spy={true} smooth={true} duration={700} href="#1">
+                Contacts
+              </Link>
             </li>
             <li>
-              <div>Souscrire</div>
+              <Link to="subscribe" spy={true} smooth={true} duration={700}>
+                <div>Souscrire</div>
+              </Link>
             </li>
           </ul>
         </div>

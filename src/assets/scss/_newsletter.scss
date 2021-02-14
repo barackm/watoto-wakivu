@@ -1,0 +1,68 @@
+.news-letter-main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 80px;
+  align-items: center;
+  padding-bottom: 100px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      line-height: 1;
+      font-size: 45px;
+      margin-bottom: 0;
+    }
+    p {
+      width: 70%;
+      font-size: 18px;
+      color: lighten($dark, 20%);
+    }
+  }
+  .input-main-container {
+    width: 700px;
+    margin-top: 80px;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 20px #e6ebee;
+    height: 60px;
+    overflow: hidden;
+    .input-wrapper {
+      flex: 1;
+      padding: 0 30px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        font-size: 18px;
+        box-sizing: border-box;
+        outline: none;
+      }
+    }
+    .btn-wrapper {
+      width: 150px;
+      text-align: center;
+      background-color: $primary;
+      color: $white;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        background-color: lighten($primary, 5%);
+      }
+    }
+  }
+}

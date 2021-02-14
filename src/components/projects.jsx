@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import { IconContext } from "react-icons";
 import { FiCheckCircle } from "react-icons/fi";
 import image1 from "../assets/images/projects/img2.jpg";
-import help from "../assets/images/help.png";
+import img1 from "../assets/images/bg1.jpg";
+import img2 from "../assets/images/bg.jpg";
+import img3 from "../assets/images/bg1.jpg";
+import img4 from "../assets/images/bg.jpg";
+import img5 from "../assets/images/bg1.jpg";
 class Projects extends Component {
   state = {};
   render() {
@@ -37,7 +41,11 @@ class Projects extends Component {
         <div className="projects-wrapper">
           <div className="images-wrapper">
             <div className="image-wrapper">
-              <img src={help} alt="" srcset="" />
+              <img src={img1} alt="" srcset="" />
+              <img src={img2} alt="" srcset="" />
+              <img src={img3} alt="" srcset="" />
+              <img src={img4} alt="" srcset="" />
+              <img src={img5} alt="" srcset="" />
             </div>
           </div>
           <div className="projects">

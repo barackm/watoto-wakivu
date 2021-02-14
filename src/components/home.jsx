@@ -4,7 +4,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <div className="home-main-area">
+      <div className="home-main-area" id="home">
         <div className="home-container-overlay" data-aos="fade-left">
           <div className="image-container"></div>
           <div className="overlay"></div>

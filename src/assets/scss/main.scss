@@ -10,3 +10,46 @@
 @import "./mixins/media";
 @import "./projects";
 @import "./footer";
+@import "./functions/border";
+@import "./galery";
+@import "./carousel";
+@import "./mixins/display";
+@import "./partners";
+@import "./newsletter";
+@import "./contact";
+body {
+  scroll-behavior: smooth;
+}
+.go-top-main-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  z-index: 9999;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba($color: darken($primary, 30%), $alpha: 0.5);
+  transition: $transition;
+  transform: translateX(100vw);
+  &:hover {
+    .gotop-arrow {
+      transform: scale(1.2);
+    }
+  }
+  &.visible {
+    transform: translateX(0);
+  }
+  .gotop-arrow {
+    transition: $transition;
+    transition-duration: 0.3s;
+
+    font-size: 25px;
+    transform: rotate(0deg);
+  }
+}

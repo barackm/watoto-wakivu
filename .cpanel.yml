@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYTPATH=/build/
+    - DEPLOYPATH=/home/user/public_html/
     - npm run build $DEPLOYTPATH

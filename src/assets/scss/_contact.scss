@@ -1,0 +1,108 @@
+.contact-main-container {
+  width: 100%;
+  min-height: 700px;
+  background-color: $white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .header-wrapper {
+    width: 100%;
+    filter: drop-shadow(
+      0 10px 20px rgba($color: darken($primary, 20%), $alpha: 0.6)
+    );
+
+    .header {
+      width: 100%;
+      padding-top: 80px;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 80px;
+      background-color: $primary;
+      height: 400px;
+      clip-path: polygon(0 0, 100% 0, 100% 50%, 69% 100%, 13% 90%, 0 48%);
+      // box-shadow:  !important;
+      h1 {
+        line-height: 1;
+        font-size: 45px;
+        margin-bottom: 0;
+      }
+      p {
+        width: 70%;
+        font-size: 18px;
+      }
+    }
+  }
+  .contact-content-container {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact-grid-wrapper {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+      transform: translateY(-280px);
+      .contact-item {
+        padding-bottom: 50px;
+        width: 100%;
+        min-height: 500px;
+        background-color: $white;
+        box-shadow: 0 0 30px 20px rgba($color: lighten($dark, 20%), $alpha: 0.2);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          padding: 0 30px;
+          text-align: center;
+          margin-top: 20px;
+          color: lighten($dark, 30%);
+        }
+        .icon-wrapper {
+          padding-top: 50px;
+          margin-bottom: 20px;
+
+          .list-icon-contact {
+            font-size: 90px;
+            color: $primary;
+          }
+        }
+        h1 {
+          margin: 0;
+          font-size: 25px;
+          text-align: center;
+        }
+        .list {
+          padding: 0 20px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .item {
+            display: flex;
+            text-align: left;
+            margin: 10px 0;
+            .icon {
+              display: flex;
+              margin-right: 10px;
+              justify-content: center;
+              .list-icon-contact {
+                color: $primary;
+              }
+            }
+            p {
+              margin: 0;
+              color: lighten($dark, 30%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
