@@ -36,7 +36,9 @@
     width: 85%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    @include queries($tablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .grid-item--main-content {
       border-right: 2px solid $primary;
       position: relative;
@@ -109,5 +111,8 @@
       margin-right: 15px;
       font-size: 25px;
     }
+  }
+  @include queries($mobile) {
+    margin-left: 10px;
   }
 }

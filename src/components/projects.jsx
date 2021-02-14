@@ -7,6 +7,7 @@ import img2 from "../assets/images/bg.jpg";
 import img3 from "../assets/images/bg1.jpg";
 import img4 from "../assets/images/bg.jpg";
 import img5 from "../assets/images/bg1.jpg";
+import { Link } from "react-scroll";
 class Projects extends Component {
   state = {};
   render() {
@@ -29,7 +30,15 @@ class Projects extends Component {
             </p>
 
             <div className="btns-wrapper">
-              <div className="btn-left">soutenir</div>
+              <Link
+                to="contacts"
+                spy={true}
+                smooth={true}
+                duration={700}
+                className="btn-left"
+              >
+                soutenir
+              </Link>
             </div>
           </div>
           <div className="image-container-main" data-aos="flip-right">

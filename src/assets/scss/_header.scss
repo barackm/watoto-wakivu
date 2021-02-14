@@ -130,7 +130,7 @@ body {
       border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
       right: 0;
       margin-right: 0;
-      background-color: rgba(0, 0, 0, 0.822);
+      background-color: rgba(0, 0, 0, 0.986);
       transition-delay: 0.6s;
       ul {
         flex-direction: column;
@@ -196,7 +196,7 @@ body {
         border-radius: 0%;
         right: 0;
         margin-right: 0;
-        background-color: rgba($color: $dark, $alpha: 0.9);
+        // background-color: rgba($color: $dark, $alpha: 0.9);
         ul {
           flex-direction: column;
           li {

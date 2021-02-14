@@ -33,6 +33,19 @@
       bottom: 70px;
       background-color: $primary;
     }
+    @include queries($tablet) {
+      .content {
+        padding-top: -10px;
+        transform: translateX(100px);
+        h1 {
+          font-size: 30px;
+        }
+      }
+      height: 200px;
+      .line {
+        bottom: 80px;
+      }
+    }
   }
   .articles-container {
     width: 100%;
@@ -138,6 +151,107 @@
         }
       }
     }
+
+    @include queries($tablet) {
+      .article-wrapper {
+        .title-container {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          h1,
+          p {
+            margin-left: 40px;
+            margin-right: 20px;
+          }
+          p {
+            margin-right: 30px;
+            line-height: 1.6;
+          }
+          h1 {
+            font-size: 30px;
+          }
+        }
+        .image-container {
+          .date-top {
+            padding-top: 10px;
+            span {
+              font-size: 14px;
+            }
+            .line {
+            }
+          }
+          .date-right {
+            span {
+              font-size: 14px;
+            }
+            .line {
+              right: 10px;
+            }
+          }
+          .kivu {
+            font-size: 50px;
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $white;
+            letter-spacing: 8px;
+            z-index: 99;
+          }
+        }
+      }
+    }
+    @include queries($mobile) {
+      .article-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title-container {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          h1,
+          p {
+            margin-left: 40px;
+            margin-right: 20px;
+          }
+          p {
+            margin-right: 30px;
+            line-height: 1.6;
+          }
+          h1 {
+            font-size: 30px;
+          }
+        }
+        .image-container {
+          width: 80%;
+          .date-top {
+            padding-top: 10px;
+            span {
+              font-size: 14px;
+            }
+            .line {
+            }
+          }
+          .date-right {
+            span {
+              font-size: 14px;
+            }
+            .line {
+              right: 10px;
+            }
+          }
+          .kivu {
+            font-size: 50px;
+            -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $white;
+            letter-spacing: 8px;
+            z-index: 99;
+          }
+        }
+      }
+    }
   }
 }
 .content-article {
@@ -161,6 +275,27 @@
     p {
       line-height: 1.6;
       padding-right: 50px;
+    }
+  }
+  @include queries($tablet) {
+    padding-left: 45%;
+  }
+  @include queries($mobile) {
+    padding-left: 0%;
+    .title {
+      width: 100%;
+      padding-right: 20px;
+      z-index: 999;
+      h1 {
+        display: flex;
+        width: 90%;
+        text-align: center;
+      }
+    }
+    .content {
+      width: 100%;
+      padding: 0 30px;
+      z-index: 999;
     }
   }
 }
@@ -191,5 +326,20 @@
     z-index: 999;
     right: 0;
     box-shadow: 0 0 30px rgba($color: darken($primary, 40%), $alpha: 0.5);
+  }
+  @include queries($tablet) {
+    width: 450px;
+    height: 450px;
+    .border {
+      border-width: 30px;
+    }
+  }
+  @include queries($mobile) {
+    width: 450px;
+    height: 450px;
+    .border {
+      z-index: 9;
+      opacity: 0.5;
+    }
   }
 }

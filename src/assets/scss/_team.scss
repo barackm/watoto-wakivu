@@ -23,6 +23,14 @@
       font-size: 18px;
     }
   }
+  @include queries($tablet) {
+    padding-top: 50px;
+    .header {
+      p {
+        width: 80%;
+      }
+    }
+  }
 }
 
 .team-members-grid-main {
@@ -217,6 +225,19 @@
           }
         }
       }
+    }
+
+    @include queries($tablet) {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+    @include queries($mobile) {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 50px;
     }
   }
 }

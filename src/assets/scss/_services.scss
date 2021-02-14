@@ -33,6 +33,11 @@
       width: 70%;
       font-size: 18px;
     }
+    @include queries($mobile) {
+      h1 {
+        font-size: 30px;
+      }
+    }
   }
   .services-grid-container {
     z-index: 99;
@@ -42,6 +47,14 @@
     margin-top: 80px;
     grid-gap: 20px;
     padding-bottom: 100px;
+    @include queries($tablet) {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include queries($mobile) {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+    }
     .grid-item {
       width: 100%;
       display: flex;
@@ -147,6 +160,13 @@
       }
     }
   }
+
+  @include queries($tablet) {
+    .education-main-content {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 .education-wrapper {
   display: grid;
@@ -205,6 +225,95 @@
       .dots-wrapper {
         #dots-svg {
           bottom: -30px;
+        }
+      }
+    }
+  }
+
+  @include queries(900px) {
+    width: 90%;
+    .service-img-wrapper {
+      .dots-wrapper {
+        #dots-svg {
+          width: 150px;
+          bottom: 80px;
+        }
+      }
+    }
+    &.third {
+      .service-img-wrapper {
+        .dots-wrapper {
+          #dots-svg {
+            width: 150px;
+            bottom: 30px;
+          }
+        }
+      }
+    }
+    &.second {
+      .service-img-wrapper {
+        .dots-wrapper {
+          #dots-svg {
+            width: 150px;
+            bottom: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  @include queries($tablet) {
+    grid-template-columns: repeat(1, 1fr);
+    .service-img-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      #dots-svg {
+        width: 200px;
+        position: absolute;
+        bottom: -60px !important;
+      }
+      .image-wrapper {
+        width: 90%;
+        height: 400px;
+        z-index: 99;
+        box-shadow: 0 0 30px
+          rgba($color: darken($white-secondary, 30%), $alpha: 0.7);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &.second {
+      margin-bottom: 100px;
+      position: relative;
+      .service-img-wrapper {
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+
+        .dots-wrapper {
+          #dots-svg {
+            bottom: -60px !important;
+            left: 80% !important;
+          }
+        }
+      }
+    }
+  }
+  @include queries($mobile) {
+    .service-img-wrapper {
+      .image-wrapper {
+        width: 95%;
+        height: 300px;
+      }
+      .dots-wrapper {
+        #dots-svg {
+          width: 150px !important;
         }
       }
     }
