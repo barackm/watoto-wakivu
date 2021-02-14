@@ -8,17 +8,17 @@ class Blog extends Component {
         <div className="header">
           <div className="line"></div>
           <div className="content">
-            <h1>
+            <h1 data-aos="zoom-in-up">
               Nos <br /> <span>REALISATIONS</span>
             </h1>
-            <p>
+            <p data-aos="zoom-in-up">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. At odio
               veniam consequuntur.
             </p>
           </div>
         </div>
         <div className="articles-container">
-          <div className="article-wrapper">
+          <div className="article-wrapper" data-aos="zoom-in-up">
             <div className="title-container">
               <h1>domaine d’intervention</h1>
               <p>
@@ -41,11 +41,9 @@ class Blog extends Component {
               <h1 className="kivu">KIVU</h1>
             </div>
           </div>
-          <div className="content-article">
+          <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper">
-              <div className="border">
-                <p>WATOTO WA KIVU</p>
-              </div>
+              <div className="border"></div>
             </div>
             <div className="title">
               <h1> domaine d’intervention scolaire</h1>
@@ -90,7 +88,7 @@ class Blog extends Component {
           </div>
         </div>
         <div className="articles-container">
-          <div className="article-wrapper">
+          <div className="article-wrapper" data-aos="zoom-in-up">
             <div className="title-container">
               <h1>domaine d’intervention social /orphelin (e)(s).</h1>
               <p>
@@ -113,11 +111,9 @@ class Blog extends Component {
               <h1 className="kivu">KIVU</h1>
             </div>
           </div>
-          <div className="content-article">
+          <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper second">
-              <div className="border">
-                <p>WATOTO WA KIVU</p>
-              </div>
+              <div className="border"></div>
             </div>
             <div className="title">
               <h1> domaine d’intervention social /orphelin (e)(s)</h1>
@@ -179,7 +175,7 @@ class Blog extends Component {
           </div>
         </div>
         <div className="articles-container">
-          <div className="article-wrapper">
+          <div className="article-wrapper" data-aos="zoom-in-up">
             <div className="title-container">
               <h1> domaine d’intervention socio- carcéral</h1>
               <p>
@@ -202,11 +198,9 @@ class Blog extends Component {
               <h1 className="kivu">KIVU</h1>
             </div>
           </div>
-          <div className="content-article">
+          <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper">
-              <div className="border">
-                <p>WATOTO WA KIVU</p>
-              </div>
+              <div className="border"></div>
             </div>
             <div className="title">
               <h1> domaine d’intervention social /orphelin (e)(s)</h1>
@@ -246,7 +240,7 @@ class Blog extends Component {
           </div>
         </div>
         <div className="articles-container">
-          <div className="article-wrapper">
+          <div className="article-wrapper" data-aos="zoom-in-up">
             <div className="title-container">
               <h1> Covid-19 : domaine d’intervention : sanitaire</h1>
               <p>
@@ -269,11 +263,9 @@ class Blog extends Component {
               <h1 className="kivu">KIVU</h1>
             </div>
           </div>
-          <div className="content-article">
+          <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper">
-              <div className="border">
-                <p>WATOTO WA KIVU</p>
-              </div>
+              <div className="border"></div>
             </div>
             <div className="title">
               <h1> Covid-19 : domaine d’intervention : sanitaire</h1>

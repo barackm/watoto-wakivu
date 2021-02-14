@@ -27,14 +27,21 @@ class Header extends Component {
   render() {
     return (
       <div className="header-main-area" ref={this.navbar}>
-        <div className="logo">
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={700}
+          href="#1"
+          className="logo"
+        >
           <span>LOGO</span>
           <div className="hamburger-container" onClick={this.handleToggleMenu}>
             <div className="burger"></div>
             <div className="burger"></div>
             <div className="burger"></div>
           </div>
-        </div>
+        </Link>
         <div className="links">
           <ul>
             <li>
@@ -43,22 +50,40 @@ class Header extends Component {
               </Link>
             </li>
             <li>
-              <Link to="about" spy={true} smooth={true} duration={700} href="#1">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={700}
+                href="#1"
+              >
                 Apropos
               </Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true} duration={700} href="#1">
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={700}
+                href="#1"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link to="contacts" spy={true} smooth={true} duration={700} href="#1">
-                Contacts
+              <Link
+                to="contacts"
+                spy={true}
+                smooth={true}
+                duration={700}
+                href="#1"
+              >
+                Contact
               </Link>
             </li>
             <li>
-              <Link to="subscribe" spy={true} smooth={true} duration={700}>
+              <Link to="contacts" spy={true} smooth={true} duration={700}>
                 <div>Souscrire</div>
               </Link>
             </li>

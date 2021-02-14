@@ -1,11 +1,32 @@
 import React, { Component } from "react";
+import { Formik } from "formik";
+import * as Yup from "yup";
+
 import { IconContext } from "react-icons";
 import { FiCheckCircle } from "react-icons/fi";
 import { FaHandsHelping, FaSmileBeam } from "react-icons/fa";
 import { GiHummingbird } from "react-icons/gi";
+import Input from "./input";
 
 class Contact extends Component {
   state = {};
+
+  validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .required("Veuillez entrer votre nom.")
+      .min(3, "Votre nom doit contenir au mois 3 lettres."),
+    email: Yup.string()
+      .email("Veuillez entrer une addresse mail valide!")
+      .required("Veuillez entrer votre address Email."),
+    phone: Yup.string().required("Veuillez entrer votre numéro de téléphone."),
+    lastname: Yup.string()
+      .min(3, "Le nom doit avoir aumoins 3 lettres.")
+      .required("Veuillez entrer votre deuxieme nom."),
+    message: Yup.string()
+      .min(3, "Votre message est trop court.")
+      .required("Veuillez entrer votre message."),
+  });
+
   render() {
     return (
       <div className="contact-main-container" id="contacts">
@@ -20,7 +41,7 @@ class Contact extends Component {
         </div>
         <div className="contact-content-container">
           <div className="contact-grid-wrapper">
-            <div className="contact-item">
+            <div className="contact-item" data-aos="zoom-in-left">
               <div className="icon-wrapper">
                 <IconContext.Provider
                   value={{ className: "list-icon-contact" }}
@@ -49,7 +70,7 @@ class Contact extends Component {
               </div>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item" data-aos="zoom-in-up">
               <div className="icon-wrapper">
                 <IconContext.Provider
                   value={{ className: "list-icon-contact" }}
@@ -99,7 +120,7 @@ class Contact extends Component {
               </div>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item" data-aos="zoom-in-right">
               <div className="icon-wrapper">
                 <IconContext.Provider
                   value={{ className: "list-icon-contact" }}
@@ -173,7 +194,7 @@ class Contact extends Component {
               </span>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item" data-aos="zoom-in-left">
               <div className="icon-wrapper">
                 <IconContext.Provider
                   value={{ className: "list-icon-contact" }}
@@ -226,7 +247,7 @@ class Contact extends Component {
               </div>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item" data-aos="zoom-in-up">
               <div className="icon-wrapper">
                 <IconContext.Provider
                   value={{ className: "list-icon-contact" }}
@@ -274,7 +295,7 @@ class Contact extends Component {
               </div>
             </div>
 
-            <div className="contact-item">
+            <div className="contact-item" data-aos="zoom-in-right">
               <div className="icon-wrapper">
                 <IconContext.Provider
                   value={{ className: "list-icon-contact" }}
@@ -325,6 +346,92 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <Formik
+          validationSchema={this.validationSchema}
+          initialValues={{
+            name: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            message: "",
+          }}
+        >
+          {({ handleChange, handleSubmit, errors, setFieldTouched }) => (
+            <>
+              <div className="contact-input-main-container">
+                <div className="inputs-wrapper">
+                  <div className="header">
+                    <h1>Contactez nous</h1>
+                  </div>
+                  <div className="many">
+                    <div>
+                      <Input
+                        placeholder="Nom"
+                        onChange={handleChange}
+                        onBlur={setFieldTouched}
+                        name="name"
+                      />
+                      <div className="error-maessage-container">
+                        <span>{errors["name"]}</span>
+                      </div>
+                    </div>
+                    <div>
+                      <Input
+                        placeholder="Postnom"
+                        onChange={handleChange}
+                        onBlur={setFieldTouched}
+                        name="lastname"
+                      />
+                      <div className="error-maessage-container">
+                        <span>{errors["lastname"]}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <Input
+                    placeholder="Email"
+                    onChange={handleChange}
+                    onBlur={setFieldTouched}
+                    name="email"
+                  />
+                  <div className="error-maessage-container">
+                    <span>{errors["email"]}</span>
+                  </div>
+                  <Input
+                    placeholder="Télephone"
+                    onChange={handleChange}
+                    onBlur={setFieldTouched}
+                    name="phone"
+                  />
+                  <div className="error-maessage-container">
+                    <span>{errors["phone"]}</span>
+                  </div>
+                  <div className="textarea-container">
+                    <textarea
+                      name="message"
+                      placeholder="Message"
+                      onChange={handleChange}
+                      onBlur={setFieldTouched}
+                      id=""
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                  <div className="error-maessage-container">
+                    <span>{errors["message"]}</span>
+                  </div>
+                  <div className="contact-btn-wrapper">
+                    <div className="send-btn" onClick={handleSubmit}>
+                      Envoyer
+                    </div>
+                  </div>
+                </div>
+                <div className="contact-image-wrapper-input">
+                  <div className="overlay"></div>
+                </div>
+              </div>
+            </>
+          )}
+        </Formik>
       </div>
     );
   }

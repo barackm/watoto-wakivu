@@ -16,9 +16,6 @@
 
       width: 100%;
       height: 650px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       .image-wrapper {
         z-index: 999;
         height: 100%;
@@ -134,7 +131,7 @@
     padding-right: 50px;
   }
   .project-item {
-    z-index: 999;
+    z-index: 999 !important;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);

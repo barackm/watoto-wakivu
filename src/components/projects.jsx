@@ -18,7 +18,7 @@ class Projects extends Component {
         <div className="overlay-circle c--4"></div>
 
         <div className="projects-header-container">
-          <div className="text-content">
+          <div className="text-content" data-aos="zoom-in-up">
             <h1>Programme</h1>
             <h3>Projects a soutenir</h3>
             <h3>Domaine d'intervention</h3>
@@ -32,7 +32,7 @@ class Projects extends Component {
               <div className="btn-left">soutenir</div>
             </div>
           </div>
-          <div className="image-container-main">
+          <div className="image-container-main" data-aos="flip-right">
             <div className="image-wrapper">
               <img src={image1} alt="" srcset="" />
             </div>
@@ -41,11 +41,35 @@ class Projects extends Component {
         <div className="projects-wrapper">
           <div className="images-wrapper">
             <div className="image-wrapper">
-              <img src={img1} alt="" srcset="" />
-              <img src={img2} alt="" srcset="" />
-              <img src={img3} alt="" srcset="" />
-              <img src={img4} alt="" srcset="" />
-              <img src={img5} alt="" srcset="" />
+              <img src={img1} alt="" srcset="" data-aos="flip-right" />
+              <img
+                src={img2}
+                alt=""
+                srcset=""
+                data-aos="flip-right"
+                data-aos-delay={500}
+              />
+              <img
+                src={img3}
+                alt=""
+                srcset=""
+                data-aos="flip-right"
+                data-aos-delay={600}
+              />
+              <img
+                src={img4}
+                alt=""
+                srcset=""
+                data-aos="flip-right"
+                data-aos-delay={700}
+              />
+              <img
+                src={img5}
+                alt=""
+                srcset=""
+                data-aos="flip-right"
+                data-aos-delay={800}
+              />
             </div>
           </div>
           <div className="projects">

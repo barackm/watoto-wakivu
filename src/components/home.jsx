@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 
 class Home extends Component {
   state = {};
@@ -20,12 +21,24 @@ class Home extends Component {
           l’homme.
         </div>
         <div className="hero-btn-container" data-aos="zoom-in-up">
-          <div className="first-btn">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={700}
+            className="first-btn"
+          >
             <span>Voir plus</span>
-          </div>
-          <div className="second-btn">
+          </Link>
+          <Link
+            to="contacts"
+            spy={true}
+            smooth={true}
+            duration={700}
+            className="second-btn"
+          >
             <span> contectez nous</span>
-          </div>
+          </Link>
         </div>
       </div>
     );
