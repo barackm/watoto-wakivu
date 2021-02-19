@@ -52,4 +52,22 @@ body {
     font-size: 25px;
     transform: rotate(0deg);
   }
+  @include queries($tablet) {
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    .gotop-arrow {
+      font-size: 20px;
+    }
+  }
+  @include queries($mobile) {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    .gotop-arrow {
+      font-size: 20px;
+    }
+  }
 }

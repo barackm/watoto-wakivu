@@ -64,5 +64,49 @@
         background-color: lighten($primary, 5%);
       }
     }
+    @include queries($tablet) {
+      width: 80%;
+      height: 50px;
+      .btn-wrapper {
+        width: 120px;
+        font-size: 14px;
+        &:hover {
+          background-color: lighten($primary, 5%);
+        }
+      }
+      .input-wrapper {
+        input {
+          font-size: 14px;
+        }
+      }
+    }
+    @include queries($mobile) {
+      width: 90%;
+      height: 40px;
+      .btn-wrapper {
+        width: 90px;
+        font-size: 12px;
+        &:hover {
+          background-color: lighten($primary, 5%);
+        }
+      }
+      .input-wrapper {
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  @include queries($tablet) {
+    padding-top: 50px;
+    .header {
+      p {
+        width: 80%;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    }
   }
 }
