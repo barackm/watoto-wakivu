@@ -4214,6 +4214,8 @@ body {
   background-color: #f3f3f5;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
 }
 
 .contact-input-main-container .inputs-wrapper {
