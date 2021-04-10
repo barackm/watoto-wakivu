@@ -24,6 +24,9 @@ class Header extends Component {
   handleToggleMenu = () => {
     this.navbar.current.classList.toggle("open");
   };
+  handleCloseMenu = () => {
+    this.navbar.current.classList.remove("open");
+  };
   render() {
     return (
       <div className="header-main-area" ref={this.navbar}>
@@ -45,12 +48,20 @@ class Header extends Component {
         <div className="links">
           <ul>
             <li>
-              <Link to="home" spy={true} smooth={true} duration={700} href="#1">
+              <Link
+                to="home"
+                onClick={this.handleCloseMenu}
+                spy={true}
+                smooth={true}
+                duration={700}
+                href="#1"
+              >
                 Accueil
               </Link>
             </li>
             <li>
               <Link
+                onClick={this.handleCloseMenu}
                 to="about"
                 spy={true}
                 smooth={true}
@@ -62,6 +73,7 @@ class Header extends Component {
             </li>
             <li>
               <Link
+                onClick={this.handleCloseMenu}
                 to="services"
                 spy={true}
                 smooth={true}
@@ -73,6 +85,7 @@ class Header extends Component {
             </li>
             <li>
               <Link
+                onClick={this.handleCloseMenu}
                 to="contacts"
                 spy={true}
                 smooth={true}
@@ -83,7 +96,13 @@ class Header extends Component {
               </Link>
             </li>
             <li>
-              <Link to="contacts" spy={true} smooth={true} duration={700}>
+              <Link
+                to="contacts"
+                onClick={this.handleCloseMenu}
+                spy={true}
+                smooth={true}
+                duration={700}
+              >
                 <div>Souscrire</div>
               </Link>
             </li>
