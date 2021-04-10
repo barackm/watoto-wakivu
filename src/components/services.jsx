@@ -4,7 +4,9 @@ import { MdSchool } from "react-icons/md";
 import { FaHeartbeat } from "react-icons/fa";
 import { GiHamburger } from "react-icons/gi";
 import Dots from "./dots";
-import img from "../assets/images/bg1.jpg";
+import img from "../assets/images/projects/download-8.jpg";
+import img2 from "../assets/images/projects/download-6.jpg";
+import img3 from "../assets/images/projects/home.jpg";
 
 class Services extends Component {
   state = {};
@@ -120,7 +122,7 @@ class Services extends Component {
             </div>
             <div className="service-img-wrapper" data-aos="fade-up">
               <div className="image-wrapper">
-                <img src={img} alt="" />
+                <img src={img2} alt="" />
               </div>
               <div className="dots-wrapper">
                 <Dots />
@@ -130,7 +132,7 @@ class Services extends Component {
           <div className="education-wrapper third">
             <div className="service-img-wrapper" data-aos="fade-up">
               <div className="image-wrapper">
-                <img src={img} alt="" />
+                <img src={img3} alt="" />
               </div>
               <div className="dots-wrapper">
                 <Dots />

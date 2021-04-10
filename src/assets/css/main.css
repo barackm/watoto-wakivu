@@ -1722,7 +1722,6 @@ body {
 
 .blog-main-container .articles-container .article-wrapper .image-container {
   overflow: hidden;
-  background-image: url("../images/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2014,7 +2013,6 @@ body {
   border: 70px solid #ed4c5c;
   -webkit-box-shadow: inset 0 0 -30px gray;
           box-shadow: inset 0 0 -30px gray;
-  background-image: url("../images/bg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4309,7 +4307,7 @@ body {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  background-image: url("../images/contact.jpg");
+  background-image: url("../images/projects/download-9.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

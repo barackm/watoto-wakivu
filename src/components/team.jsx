@@ -7,6 +7,9 @@ import alain from "../assets/images/team/alain.jpg";
 import nadine from "../assets/images/team/nadine.jpg";
 import athanase from "../assets/images/team/athanase.jpg";
 import lae from "../assets/images/team/lae.jpg";
+import jeanPaul from "../assets/images/team/jean-paul-new.jpg";
+import victoire from "../assets/images/team/mugabo.jpg";
+
 class Team extends Component {
   state = {};
   render() {
@@ -45,7 +48,7 @@ class Team extends Component {
         facebook: "https://web.facebook.com/elnadia.salibaya",
         twitter: "https://twitter.com/alain_mubake",
         linkedIn: "https://twitter.com/alain_mubake",
-        img: jos,
+        img: jeanPaul,
       },
       {
         id: 5,
@@ -73,6 +76,15 @@ class Team extends Component {
         twitter: "https://web.facebook.com/laetitia.bat.52",
         linkedIn: "https://web.facebook.com/laetitia.bat.52",
         img: lae,
+      },
+      {
+        id: 8,
+        name: "VICTOIR MUGABO",
+        post: "",
+        facebook: "https://www.facebook.com/victoire.mugabo",
+        twitter: "https://twitter.com/MugaboVictoire",
+        linkedIn: "https://twitter.com/MugaboVictoire",
+        img: victoire,
       },
     ];
     return (

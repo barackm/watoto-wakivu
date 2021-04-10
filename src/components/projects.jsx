@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { IconContext } from "react-icons";
 import { FiCheckCircle } from "react-icons/fi";
-import image1 from "../assets/images/projects/img2.jpg";
-import img1 from "../assets/images/bg1.jpg";
-import img2 from "../assets/images/bg.jpg";
-import img3 from "../assets/images/bg1.jpg";
-import img4 from "../assets/images/bg.jpg";
-import img5 from "../assets/images/bg1.jpg";
+import image1 from "../assets/images/projects/download-9.jpg";
+import img1 from "../assets/images/projects/download-2.jpg";
+import img2 from "../assets/images/projects/download-4.jpg";
+import img3 from "../assets/images/projects/download-6.jpg";
+import img4 from "../assets/images/projects/download-12.jpg";
+import img5 from "../assets/images/projects/download-3.jpg";
+
 import { Link } from "react-scroll";
 class Projects extends Component {
   state = {};

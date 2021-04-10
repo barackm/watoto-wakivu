@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 
+import img1 from "../assets/images/projects/download-4.jpg";
+import img2 from "../assets/images/projects/download-2.jpg";
+import img3 from "../assets/images/projects/download-7.jpg";
+import img4 from "../assets/images/projects/download-6.jpg";
+import border1 from "../assets/images/projects/download-6.jpg";
+import border2 from "../assets/images/projects/download-10.jpg";
+import border3 from "../assets/images/projects/download-12.jpg";
+import border4 from "../assets/images/projects/home.jpg";
+
 class Blog extends Component {
   state = {};
   render() {
@@ -28,7 +37,11 @@ class Blog extends Component {
                 réalisations vêtues de réussite et de satisfaction.
               </p>
             </div>
-            <div className="image-container">
+
+            <div
+              className="image-container"
+              style={{ backgroundImage: `url(${img1})` }}
+            >
               <div className="overlay"></div>
               <div className="date-top">
                 <div className="line"></div>
@@ -43,7 +56,10 @@ class Blog extends Component {
           </div>
           <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper">
-              <div className="border"></div>
+              <div
+                className="border"
+                style={{ backgroundImage: `url(${border1})` }}
+              ></div>
             </div>
             <div className="title">
               <h1> domaine d’intervention scolaire</h1>
@@ -98,7 +114,10 @@ class Blog extends Component {
                 réalisations vêtues de réussite et de satisfaction.
               </p>
             </div>
-            <div className="image-container">
+            <div
+              className="image-container"
+              style={{ backgroundImage: `url(${img2})` }}
+            >
               <div className="overlay"></div>
               <div className="date-top">
                 <div className="line"></div>
@@ -113,7 +132,10 @@ class Blog extends Component {
           </div>
           <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper second">
-              <div className="border"></div>
+              <div
+                className="border"
+                style={{ backgroundImage: `url(${border2})` }}
+              ></div>
             </div>
             <div className="title">
               <h1> domaine d’intervention social /orphelin (e)(s)</h1>
@@ -185,7 +207,10 @@ class Blog extends Component {
                 réalisations vêtues de réussite et de satisfaction.
               </p>
             </div>
-            <div className="image-container">
+            <div
+              className="image-container"
+              style={{ backgroundImage: `url(${img3})` }}
+            >
               <div className="overlay"></div>
               <div className="date-top">
                 <div className="line"></div>
@@ -200,7 +225,10 @@ class Blog extends Component {
           </div>
           <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper">
-              <div className="border"></div>
+              <div
+                className="border"
+                style={{ backgroundImage: `url(${border3})` }}
+              ></div>
             </div>
             <div className="title">
               <h1> domaine d’intervention social /orphelin (e)(s)</h1>
@@ -250,7 +278,10 @@ class Blog extends Component {
                 réalisations vêtues de réussite et de satisfaction.
               </p>
             </div>
-            <div className="image-container">
+            <div
+              className="image-container"
+              style={{ backgroundImage: `url(${img4})` }}
+            >
               <div className="overlay"></div>
               <div className="date-top">
                 <div className="line"></div>
@@ -265,7 +296,10 @@ class Blog extends Component {
           </div>
           <div className="content-article" data-aos="zoom-in-right">
             <div className="image-overlay-wrapper">
-              <div className="border"></div>
+              <div
+                className="border"
+                style={{ backgroundImage: `url(${border4})` }}
+              ></div>
             </div>
             <div className="title">
               <h1> Covid-19 : domaine d’intervention : sanitaire</h1>
