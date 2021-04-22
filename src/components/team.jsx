@@ -60,18 +60,9 @@ class Team extends Component {
         img: athanase,
       },
       {
-        id: 6,
-        name: "VICTOIRE MUGABO",
-        post: "",
-        facebook: "https://web.facebook.com/victoire.mugabo/",
-        twitter: "https://web.facebook.com/victoire.mugabo/",
-        linkedIn: "https://web.facebook.com/victoire.mugabo/",
-        img: athanase,
-      },
-      {
         id: 7,
         name: "LAETITIA BATUMIKE",
-        post: "",
+        post: "Conseillère",
         facebook: "https://web.facebook.com/laetitia.bat.52",
         twitter: "https://web.facebook.com/laetitia.bat.52",
         linkedIn: "https://web.facebook.com/laetitia.bat.52",
@@ -80,7 +71,7 @@ class Team extends Component {
       {
         id: 8,
         name: "VICTOIR MUGABO",
-        post: "",
+        post: "Conseiller",
         facebook: "https://www.facebook.com/victoire.mugabo",
         twitter: "https://twitter.com/MugaboVictoire",
         linkedIn: "https://twitter.com/MugaboVictoire",

@@ -1,5 +1,6 @@
 import React, { Component, createRef } from "react";
 import { Link } from "react-scroll";
+import logo from "../assets/images/logo.png";
 
 class Header extends Component {
   constructor(props) {
@@ -30,21 +31,24 @@ class Header extends Component {
   render() {
     return (
       <div className="header-main-area" ref={this.navbar}>
-        <Link
-          to="home"
-          spy={true}
-          smooth={true}
-          duration={700}
-          href="#1"
-          className="logo"
-        >
-          <span>LOGO</span>
+        <div className="logo">
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={700}
+            href="#1"
+            className="logo-container"
+          >
+            <img src={logo} alt="logo" />
+          </Link>
+
           <div className="hamburger-container" onClick={this.handleToggleMenu}>
             <div className="burger"></div>
             <div className="burger"></div>
             <div className="burger"></div>
           </div>
-        </Link>
+        </div>
         <div className="links">
           <ul>
             <li>

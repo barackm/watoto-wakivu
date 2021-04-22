@@ -50,7 +50,6 @@
   }
   .contact-content-container {
     width: 100%;
-    min-height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,5 +264,56 @@
   span {
     color: $primary;
     font-size: 14px;
+  }
+}
+
+.contact-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10%;
+  padding-bottom: 5rem;
+
+  p {
+    display: flex;
+    align-items: center;
+
+    .contact-icon-email {
+      font-size: 2rem;
+      color: $primary;
+      margin-right: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+      transition: all 0.4s ease;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .tel-info {
+    display: flex;
+    align-items: flex-start;
+    .title {
+      margin-bottom: 0;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      .contact-icon-email {
+        font-size: 2rem;
+        color: $primary;
+      }
+    }
+  }
+
+  @include queries($mobile) {
+    .contact-information-wrapper {
+      background-color: blue;
+      .tel-info {
+        justify-content: center;
+      }
+    }
   }
 }

@@ -4,8 +4,9 @@ import * as Yup from "yup";
 
 import { IconContext } from "react-icons";
 import { FiCheckCircle } from "react-icons/fi";
-import { FaHandsHelping, FaSmileBeam } from "react-icons/fa";
+import { FaHandsHelping, FaSmileBeam, FaPhoneAlt } from "react-icons/fa";
 import { GiHummingbird } from "react-icons/gi";
+import { MdEmail } from "react-icons/md";
 import Input from "./input";
 
 class Contact extends Component {
@@ -343,6 +344,29 @@ class Contact extends Component {
                 exprimés par les familles et les communautés pauvres et sans
                 voix.
               </span>
+            </div>
+          </div>
+        </div>
+        <div className="contact-information-wrapper">
+          <h2 className="title">NOS ADRESSES</h2>
+          <p>
+            <strong>
+              <IconContext.Provider value={{ className: "contact-icon-email" }}>
+                <MdEmail />
+              </IconContext.Provider>
+            </strong>{" "}
+            <a href="#">watotowakivu@gmail.com</a>{" "}
+          </p>
+          <div className="tel-info">
+            <div className="title">
+              <IconContext.Provider value={{ className: "contact-icon-email" }}>
+                <FaPhoneAlt />
+              </IconContext.Provider>
+            </div>
+            <div className="numbers">
+              <p>(+243) 975 461 916</p>
+              <p>(+243) 978318512</p>
+              <p>(+243) 996 996 761</p>
             </div>
           </div>
         </div>

@@ -504,6 +504,15 @@ body {
   }
 }
 
+.logo-container {
+  height: 100%;
+}
+
+.logo-container img {
+  height: 70%;
+  width: 20%;
+}
+
 .about-main-area {
   width: 100%;
   display: -webkit-box;
@@ -4094,7 +4103,6 @@ body {
 
 .contact-main-container .contact-content-container {
   width: 100%;
-  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4436,6 +4444,76 @@ body {
 .error-maessage-container span {
   color: #ed4c5c;
   font-size: 14px;
+}
+
+.contact-information-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-left: 10%;
+  padding-bottom: 5rem;
+}
+
+.contact-information-wrapper p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-information-wrapper p .contact-icon-email {
+  font-size: 2rem;
+  color: #ed4c5c;
+  margin-right: 1rem;
+}
+
+.contact-information-wrapper p a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contact-information-wrapper p a:hover {
+  color: #ed4c5c;
+}
+
+.contact-information-wrapper .tel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact-information-wrapper .tel-info .title {
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.contact-information-wrapper .tel-info .title .contact-icon-email {
+  font-size: 2rem;
+  color: #ed4c5c;
+}
+
+@media (max-width: 480px) {
+  .contact-information-wrapper .contact-information-wrapper {
+    background-color: blue;
+  }
+  .contact-information-wrapper .contact-information-wrapper .tel-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 body {
