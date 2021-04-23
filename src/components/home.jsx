@@ -37,7 +37,7 @@ class Home extends Component {
             duration={700}
             className="second-btn"
           >
-            <span> contectez nous</span>
+            <span> contactez nous</span>
           </Link>
         </div>
       </div>
