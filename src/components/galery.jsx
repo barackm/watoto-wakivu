@@ -59,12 +59,7 @@ class Galery extends Component {
     this.setState({ selectedImage: image._id, carouselVisible: true });
   };
   render() {
-    const links = [
-      { id: 1, name: "Tout" },
-      { id: 2, name: "Photographie" },
-      { id: 3, name: "Print" },
-      { id: 4, name: "Design" },
-    ];
+    const links = [{ id: 1, name: "Tout" }];
 
     return (
       <>
