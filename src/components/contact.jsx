@@ -33,7 +33,7 @@ class Contact extends Component {
       <div className="contact-main-container" id="contacts">
         <div className="header-wrapper">
           <div className="header">
-            <h1 data-aos="zoom-in-up">Contact</h1>
+            <h1 data-aos="zoom-in-up">Souscrire</h1>
             <p data-aos="zoom-in-up">
               Sauver la dignité humaine de la personne vulnérable dans le
               respect de son authenticité
