@@ -2635,6 +2635,11 @@ body {
   }
 }
 
+.footer-logo {
+  width: 5rem;
+  height: 5rem;
+}
+
 .galery-main-area {
   width: 100%;
   height: auto;

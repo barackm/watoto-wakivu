@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-scroll";
+import logo from "../assets/images/logo.png";
 
 class Footer extends Component {
   state = {};
@@ -12,7 +13,9 @@ class Footer extends Component {
       <div className="footer-main-container">
         <div className="footer-upper-side-area">
           <div className="footer-logo-wrapper">
-            <span>LOGO</span>
+            <Link to="home" spy={true} smooth={true} duration={700}>
+              <img src={logo} alt="logo" className="footer-logo" />
+            </Link>
           </div>
           <div className="footer-links-wrapper">
             <ul>
