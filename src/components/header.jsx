@@ -90,7 +90,7 @@ class Header extends Component {
             <li>
               <Link
                 onClick={this.handleCloseMenu}
-                to="contacts"
+                to="contact2"
                 spy={true}
                 smooth={true}
                 duration={700}

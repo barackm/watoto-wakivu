@@ -382,7 +382,7 @@ class Contact extends Component {
         >
           {({ handleChange, handleSubmit, errors, setFieldTouched }) => (
             <>
-              <div className="contact-input-main-container">
+              <div className="contact-input-main-container" id="contact2">
                 <div className="inputs-wrapper">
                   <div className="header">
                     <h1>Contactez nous</h1>
