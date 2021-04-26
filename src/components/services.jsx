@@ -4,9 +4,9 @@ import { MdSchool } from "react-icons/md";
 import { FaHeartbeat } from "react-icons/fa";
 import { GiHamburger } from "react-icons/gi";
 import Dots from "./dots";
-import img from "../assets/images/projects/download-8.jpg";
-import img2 from "../assets/images/projects/download-6.jpg";
-import img3 from "../assets/images/projects/home.jpg";
+import img from "../assets/images/education.png";
+import img2 from "../assets/images/sante1.png";
+import img3 from "../assets/images/nutrition.png";
 
 class Services extends Component {
   state = {};
