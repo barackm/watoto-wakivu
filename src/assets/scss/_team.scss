@@ -74,6 +74,7 @@
             height: 100%;
             z-index: 9;
             transition: $transition;
+            object-fit: cover;
           }
         }
         .overlay {
@@ -175,6 +176,7 @@
         .image-wrapper {
           img {
             transform: scale(1.1);
+            object-fit: cover;
           }
           .overlay {
             opacity: 1;

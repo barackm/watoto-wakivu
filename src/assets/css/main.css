@@ -511,6 +511,8 @@ body {
 .logo-container img {
   height: 70%;
   width: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-main-area {
@@ -958,6 +960,8 @@ body {
 .education-wrapper .service-img-wrapper .image-wrapper img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .education-wrapper.second {
@@ -1368,6 +1372,8 @@ body {
   z-index: 9;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team-members-grid-main .team-members-grid .team-member-item .image-wrapper .overlay {
@@ -1511,6 +1517,8 @@ body {
 .team-members-grid-main .team-members-grid .team-member-item:hover .image-wrapper img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team-members-grid-main .team-members-grid .team-member-item:hover .image-wrapper .overlay {
@@ -2091,6 +2099,8 @@ body {
 .projects-main-container .projects-header-container .image-container-main .image-wrapper img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects-main-container .projects-header-container .text-content {
@@ -2257,6 +2267,8 @@ body {
   margin-top: -5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects-main-container .projects-wrapper .images-wrapper .image-wrapper img:hover {
@@ -2897,6 +2909,8 @@ body {
   z-index: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .images-wrapper-area .all-images-main-area .images-grid-container .image-container:hover {
@@ -2935,6 +2949,8 @@ body {
 .images-wrapper-area .all-images-main-area .images-grid-container .image-container:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 900px) {
@@ -3803,12 +3819,21 @@ body {
   grid-gap: 20px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 6rem;
 }
 
 .partners-main-container .partners-list-main-container .partners-grid .partner-item {
   width: 100%;
   height: 120px;
   background-color: #ed4c5c;
+  overflow: hidden;
+}
+
+.partners-main-container .partners-list-main-container .partners-grid .partner-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media (max-width: 768px) {
